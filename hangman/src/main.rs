@@ -16,7 +16,7 @@ fn main() {
         hidden_word.clear();
 
         let guesses_left = MAX_GUESSES - n_guesses;
-        println!("Take a guess ({} guess{} left):", guesses_left, if guesses_left != 1 { "es" } else { "" });
+        println!("Take a guess ({guesses_left} guess{} left):", if guesses_left != 1 { "es" } else { "" });
 
         io::stdin().read_line(&mut guess).unwrap();
         guess.chars().next().and_then(|c| {
@@ -34,5 +34,5 @@ fn main() {
         if game_over { break; };
     }
     
-    println!("The word was: {}", word);
+    println!("The word was: {word}");
 }
