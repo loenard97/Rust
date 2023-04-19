@@ -1,6 +1,4 @@
 #![allow(dead_code)]
-#![allow(unused_assignments)]
-#![allow(unused_imports)]
 
 use std::fs::File;
 use std::io::{BufRead, BufReader};

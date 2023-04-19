@@ -1,5 +1,4 @@
 #![allow(dead_code)]
-#![allow(unused_variables)]
 
 use std::fs::File;
 use std::io::{BufRead, BufReader};
